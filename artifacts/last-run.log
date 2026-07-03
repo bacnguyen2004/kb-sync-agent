@@ -1,0 +1,174 @@
+
+2026-07-03T08:38:26.898748138Z [inf]  Starting Container
+2026-07-03T08:38:28.860537778Z [inf]  2026-07-03 08:38:27,686 INFO Log file: /app/logs/run-20260703-083827.log
+2026-07-03T08:38:28.860543753Z [inf]  2026-07-03 08:38:27,686 INFO Starting scrape (limit=30)
+2026-07-03T08:38:28.860550629Z [inf]  2026-07-03 08:38:28,580 INFO Scrape done: added=0 updated=0 skipped=30 total=30
+2026-07-03T08:38:28.860556772Z [inf]  2026-07-03 08:38:28,580 INFO Starting vector store sync
+2026-07-03T08:38:30.724948798Z [inf]  2026-07-03 08:38:30,266 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores?limit=100 "HTTP/1.1 200 OK"
+2026-07-03T08:38:31.767189007Z [inf]    [1/30] chromeos-pwa-instructions.md
+2026-07-03T08:38:31.767197716Z [inf]  2026-07-03 08:38:31,181 INFO HTTP Request: POST https://api.openai.com/v1/assistants "HTTP/1.1 200 OK"
+2026-07-03T08:38:31.767216792Z [inf]  Preparing 30 changed files...
+2026-07-03T08:38:31.767227189Z [inf]  Uploading 30 files to OpenAI Files API...
+2026-07-03T08:38:31.767233040Z [inf]  2026-07-03 08:38:31,660 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:32.795364949Z [inf]  2026-07-03 08:38:32,614 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:32.795377857Z [inf]    [2/30] connect-cisco-webex-rooms-to-optisigns-digital-signage.md
+2026-07-03T08:38:33.755739043Z [inf]  2026-07-03 08:38:33,163 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:33.755746409Z [inf]    [3/30] connect-google-meet-hardware-to-optisigns-digital-signage.md
+2026-07-03T08:38:33.755752425Z [inf]  2026-07-03 08:38:33,646 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:33.755759017Z [inf]    [4/30] connect-microsoft-teams-rooms-to-optisigns-digital-signage.md
+2026-07-03T08:38:34.707221049Z [inf]  2026-07-03 08:38:34,127 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:34.707228869Z [inf]    [5/30] connect-zoom-rooms-to-optisigns-digital-signage.md
+2026-07-03T08:38:34.707235962Z [inf]  2026-07-03 08:38:34,445 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:34.707243223Z [inf]    [6/30] designer-2-0-new-features.md
+2026-07-03T08:38:34.959972744Z [inf]  2026-07-03 08:38:34,954 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:34.959978661Z [inf]    [7/30] disk-encryption.md
+2026-07-03T08:38:35.797951720Z [inf]  2026-07-03 08:38:35,701 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:35.797961070Z [inf]    [9/30] getting-started-with-an-optisigns-free-trial.md
+2026-07-03T08:38:35.797961120Z [inf]  2026-07-03 08:38:35,201 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:35.797967391Z [inf]    [8/30] fixing-unexpected-screen-rotation-incorrect-orientation-with-optisigns-android-stick.md
+2026-07-03T08:38:36.832307624Z [inf]  2026-07-03 08:38:36,635 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:36.832312876Z [inf]    [10/30] getting-started-with-designer.md
+2026-07-03T08:38:37.056294532Z [inf]  2026-07-03 08:38:37,048 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:37.056299278Z [inf]    [11/30] handle-oauth-authentication-using-api-gateway-pre-request-configuration.md
+2026-07-03T08:38:37.830831690Z [inf]  2026-07-03 08:38:37,812 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:37.830838550Z [inf]    [12/30] how-to-display-a-snowflake-dashboard-with-optisigns.md
+2026-07-03T08:38:38.850138186Z [inf]    [13/30] how-to-play-licensed-background-music-on-digital-signs-with-optisound.md
+2026-07-03T08:38:38.850146212Z [inf]  2026-07-03 08:38:38,793 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:38.850153526Z [inf]    [14/30] how-to-set-up-an-outlook-calendar-app-with-shared-permissions.md
+2026-07-03T08:38:38.850193027Z [inf]  2026-07-03 08:38:38,212 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:39.067184518Z [inf]  2026-07-03 08:38:39,063 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:39.067196572Z [inf]    [15/30] how-to-use-optisigns-with-microsoft-teams-rooms.md
+2026-07-03T08:38:39.724258209Z [inf]    [17/30] how-to-use-the-google-search-console-app.md
+2026-07-03T08:38:39.724300207Z [inf]  2026-07-03 08:38:39,324 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:39.724306832Z [inf]    [16/30] how-to-use-the-google-ads-dashboard-app.md
+2026-07-03T08:38:39.724312945Z [inf]  2026-07-03 08:38:39,616 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:39.902695510Z [inf]  2026-07-03 08:38:39,890 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:39.902700394Z [inf]    [18/30] how-to-use-the-optidev-app.md
+2026-07-03T08:38:40.759049623Z [inf]  2026-07-03 08:38:40,298 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:40.759056246Z [inf]    [19/30] how-to-use-the-tableau-app.md
+2026-07-03T08:38:40.759063166Z [inf]  2026-07-03 08:38:40,560 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:40.759079236Z [inf]    [20/30] how-to-use-the-youtube-dashboard-app.md
+2026-07-03T08:38:40.966474649Z [inf]  2026-07-03 08:38:40,964 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:40.966478471Z [inf]    [21/30] how-to-use-youtube-with-optisigns.md
+2026-07-03T08:38:41.804778424Z [inf]  2026-07-03 08:38:41,472 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:41.804787591Z [inf]    [23/30] optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app.md
+2026-07-03T08:38:41.804819759Z [inf]  2026-07-03 08:38:41,216 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:41.804825514Z [inf]    [22/30] operational-schedule-troubleshooting.md
+2026-07-03T08:38:41.959971592Z [inf]  2026-07-03 08:38:41,922 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:41.959978054Z [inf]    [24/30] optisigns-pro-promax-player-troubleshooting-guide.md
+2026-07-03T08:38:43.008289065Z [inf]  2026-07-03 08:38:43,002 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:43.008298276Z [inf]    [25/30] optistick-troubleshooting-guide.md
+2026-07-03T08:38:43.789812345Z [inf]  2026-07-03 08:38:43,468 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:43.789820333Z [inf]    [26/30] room-integrations-turn-your-meeting-rooms-into-digital-signage.md
+2026-07-03T08:38:44.766978876Z [inf]  2026-07-03 08:38:44,273 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:44.766985778Z [inf]    [27/30] tagging-in-optisigns.md
+2026-07-03T08:38:45.131091447Z [inf]  2026-07-03 08:38:45,123 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:45.131096043Z [inf]    [28/30] user-management-example-chain-restaurant-or-retail-store-with-multiple-locations.md
+2026-07-03T08:38:45.808165104Z [inf]  2026-07-03 08:38:45,773 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:45.808174795Z [inf]    [30/30] using-the-japan-earthquake-app.md
+2026-07-03T08:38:45.808181047Z [inf]  Indexing all files in one batch (this may take 1-3 minutes)...
+2026-07-03T08:38:45.808243663Z [inf]  2026-07-03 08:38:45,429 INFO HTTP Request: POST https://api.openai.com/v1/files "HTTP/1.1 200 OK"
+2026-07-03T08:38:45.808248531Z [inf]    [29/30] using-an-enterprise-network-802-1x-with-optisigns.md
+2026-07-03T08:38:46.935377591Z [inf]  2026-07-03 08:38:46,399 INFO HTTP Request: POST https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches "HTTP/1.1 200 OK"
+2026-07-03T08:38:46.935389359Z [inf]  2026-07-03 08:38:46,544 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:38:46.935397116Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:38:49.920314802Z [inf]  2026-07-03 08:38:49,693 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:38:49.920323111Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:38:52.878745262Z [inf]  2026-07-03 08:38:52,846 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:38:52.878752468Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:38:56.041862146Z [inf]  2026-07-03 08:38:55,986 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:38:56.041869623Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:38:59.199973719Z [inf]  2026-07-03 08:38:59,193 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:38:59.205501025Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:39:03.254918986Z [inf]  2026-07-03 08:39:02,345 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:39:03.254930500Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:39:06.141400080Z [inf]  2026-07-03 08:39:05,486 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:39:06.141407535Z [inf]    indexing... completed=0 in_progress=30 failed=0
+2026-07-03T08:39:09.429092581Z [inf]  2026-07-03 08:39:08,650 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35/file_batches/vsfb_ibj_6a477516281881f485be3d9527b53d0d "HTTP/1.1 200 OK"
+2026-07-03T08:39:09.429100885Z [inf]    indexing... completed=30 in_progress=0 failed=0
+2026-07-03T08:39:09.429108349Z [inf]  2026-07-03 08:39:08,868 INFO HTTP Request: GET https://api.openai.com/v1/vector_stores/vs_6a47581ee8fc8191b9b6b1f9e7fdcf35 "HTTP/1.1 200 OK"
+2026-07-03T08:39:09.429114844Z [inf]  2026-07-03 08:39:08,869 INFO Upload done: added=30 updated=0 skipped=0 embedded_files=60
+2026-07-03T08:39:09.429120681Z [inf]  2026-07-03 08:39:08,870 INFO Job completed successfully
+2026-07-03T08:39:09.429126610Z [inf]  {
+2026-07-03T08:39:09.429132453Z [inf]    "scrape": {
+2026-07-03T08:39:09.429304240Z [inf]      "added": 0,
+2026-07-03T08:39:09.429304786Z [inf]        52069065128723,
+2026-07-03T08:39:09.429311411Z [inf]      "updated": 0,
+2026-07-03T08:39:09.429316247Z [inf]      "skipped": 30,
+2026-07-03T08:39:09.429321708Z [inf]      "count": 30,
+2026-07-03T08:39:09.429324669Z [inf]        51343184586643,
+2026-07-03T08:39:09.429327700Z [inf]      "files": [],
+2026-07-03T08:39:09.429334022Z [inf]        49039295567891,
+2026-07-03T08:39:09.429336052Z [inf]      "article_ids": [
+2026-07-03T08:39:09.429343271Z [inf]        48751096814995,
+2026-07-03T08:39:09.429344676Z [inf]        360051014713,
+2026-07-03T08:39:09.429353566Z [inf]        53095698149011,
+2026-07-03T08:39:09.429353698Z [inf]        48656950622227,
+2026-07-03T08:39:09.429360488Z [inf]        53028011485715,
+2026-07-03T08:39:09.429360969Z [inf]        48626115821459,
+2026-07-03T08:39:09.429368506Z [inf]        52523606879251,
+2026-07-03T08:39:09.429373546Z [inf]        52412502456083,
+2026-07-03T08:39:09.429377902Z [inf]        52350277262483,
+2026-07-03T08:39:09.429382325Z [inf]        52113036672403,
+2026-07-03T08:39:10.261571651Z [inf]        48241081473043,
+2026-07-03T08:39:10.261579961Z [inf]        47616485609491,
+2026-07-03T08:39:10.261588640Z [inf]        45619214182803,
+2026-07-03T08:39:10.261597362Z [inf]        44890229616403,
+2026-07-03T08:39:10.262429305Z [inf]        43657735780627,
+2026-07-03T08:39:10.262439014Z [inf]        42087942047379,
+2026-07-03T08:39:10.262445479Z [inf]        41432385864595,
+2026-07-03T08:39:10.262451213Z [inf]        40736654972563,
+2026-07-03T08:39:10.262456484Z [inf]        40671590645651,
+2026-07-03T08:39:10.262462022Z [inf]        40212027797523,
+2026-07-03T08:39:10.262476007Z [inf]        40147900639891,
+2026-07-03T08:39:10.262480356Z [inf]        39488874989587,
+2026-07-03T08:39:10.262484642Z [inf]        39250660729747,
+2026-07-03T08:39:10.262489834Z [inf]        39080869746067,
+2026-07-03T08:39:10.262494195Z [inf]        38062664690195,
+2026-07-03T08:39:10.262498974Z [inf]        37966066335891,
+2026-07-03T08:39:10.262503354Z [inf]  36911639377683
+2026-07-03T08:39:10.262508104Z [inf]      ]
+2026-07-03T08:39:10.262512494Z [inf]    },
+2026-07-03T08:39:10.262516764Z [inf]    "upload": {
+2026-07-03T08:39:10.262521087Z [inf]      "added": 30,
+2026-07-03T08:39:10.262525520Z [inf]      "updated": 0,
+2026-07-03T08:39:10.262530227Z [inf]      "skipped": 0,
+2026-07-03T08:39:10.262534819Z [inf]      "files": [
+2026-07-03T08:39:10.262539048Z [inf]        "chromeos-pwa-instructions.md",
+2026-07-03T08:39:10.262543231Z [inf]        "connect-cisco-webex-rooms-to-optisigns-digital-signage.md",
+2026-07-03T08:39:10.262553015Z [inf]        "connect-google-meet-hardware-to-optisigns-digital-signage.md",
+2026-07-03T08:39:10.262559826Z [inf]        "connect-microsoft-teams-rooms-to-optisigns-digital-signage.md",
+2026-07-03T08:39:10.262568033Z [inf]        "connect-zoom-rooms-to-optisigns-digital-signage.md",
+2026-07-03T08:39:10.262572579Z [inf]        "designer-2-0-new-features.md",
+2026-07-03T08:39:10.263649871Z [inf]        "how-to-use-the-optidev-app.md",
+2026-07-03T08:39:10.263660258Z [inf]        "how-to-use-the-tableau-app.md",
+2026-07-03T08:39:10.263666852Z [inf]        "how-to-use-the-youtube-dashboard-app.md",
+2026-07-03T08:39:10.263673289Z [inf]        "how-to-use-youtube-with-optisigns.md",
+2026-07-03T08:39:10.263679592Z [inf]        "operational-schedule-troubleshooting.md",
+2026-07-03T08:39:10.263686793Z [inf]        "optisigns-digital-signage-app-for-zoom-adding-using-and-removing-the-app.md",
+2026-07-03T08:39:10.263694655Z [inf]        "optisigns-pro-promax-player-troubleshooting-guide.md",
+2026-07-03T08:39:10.263705530Z [inf]        "optistick-troubleshooting-guide.md",
+2026-07-03T08:39:10.263715843Z [inf]        "room-integrations-turn-your-meeting-rooms-into-digital-signage.md",
+2026-07-03T08:39:10.263727742Z [inf]        "disk-encryption.md",
+2026-07-03T08:39:10.263731430Z [inf]        "fixing-unexpected-screen-rotation-incorrect-orientation-with-optisigns-android-stick.md",
+2026-07-03T08:39:10.263735631Z [inf]        "getting-started-with-an-optisigns-free-trial.md",
+2026-07-03T08:39:10.263739800Z [inf]        "getting-started-with-designer.md",
+2026-07-03T08:39:10.263746003Z [inf]        "handle-oauth-authentication-using-api-gateway-pre-request-configuration.md",
+2026-07-03T08:39:10.263749694Z [inf]        "how-to-display-a-snowflake-dashboard-with-optisigns.md",
+2026-07-03T08:39:10.263754105Z [inf]        "how-to-play-licensed-background-music-on-digital-signs-with-optisound.md",
+2026-07-03T08:39:10.263757801Z [inf]        "how-to-set-up-an-outlook-calendar-app-with-shared-permissions.md",
+2026-07-03T08:39:10.263761804Z [inf]        "how-to-use-optisigns-with-microsoft-teams-rooms.md",
+2026-07-03T08:39:10.263765900Z [inf]        "how-to-use-the-google-ads-dashboard-app.md",
+2026-07-03T08:39:10.263769517Z [inf]        "how-to-use-the-google-search-console-app.md",
+2026-07-03T08:39:10.272065391Z [inf]    "finished_at": "2026-07-03T08:39:08.870002+00:00"
+2026-07-03T08:39:10.272081748Z [inf]      "vector_store_id": "vs_6a47581ee8fc8191b9b6b1f9e7fdcf35",
+2026-07-03T08:39:10.272088830Z [inf]      "assistant_id": "asst_QLUhkSBPgc84slvYrP1tz7Nn",
+2026-07-03T08:39:10.272092274Z [inf]      ],
+2026-07-03T08:39:10.272098022Z [inf]      "embedded_files": 60
+2026-07-03T08:39:10.272102675Z [inf]      "chunks": 60,
+2026-07-03T08:39:10.272108239Z [inf]    },
+2026-07-03T08:39:10.272127360Z [inf]  }
+2026-07-03T08:39:10.272140535Z [inf]        "user-management-example-chain-restaurant-or-retail-store-with-multiple-locations.md",
+2026-07-03T08:39:10.272148304Z [inf]        "using-an-enterprise-network-802-1x-with-optisigns.md",
+2026-07-03T08:39:10.272155129Z [inf]  "using-the-japan-earthquake-app.md"
+2026-07-03T08:39:10.272392546Z [inf]        "tagging-in-optisigns.md",

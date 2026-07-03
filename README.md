@@ -57,30 +57,38 @@ docker run --rm -e OPENAI_API_KEY=sk-... kb-sync-agent
 
 Exits `0` on success.
 
-## Daily job (Render Cron)
+## Daily job (Railway Cron)
 
-1. Push repo to GitHub.
-2. [Render](https://render.com) → **New → Cron Job**.
-3. Connect repo, set schedule `0 2 * * *` (daily 02:00 UTC).
-4. Build: `pip install -r requirements.txt`
-5. Start command: `python main.py`
-6. Env vars: `OPENAI_API_KEY`, `OPENAI_VECTOR_STORE_NAME=kb-sync-agent`
-7. Attach a **persistent disk** mounted at `/app` so `state.json` survives between runs (optional but recommended).
+Deployed on [Railway](https://railway.com) with Docker. Cron schedule: `0 2 * * *` (daily 02:00 UTC).
 
-**Job logs:** Render Dashboard → your cron job → **Logs**  
-→ _add your Render logs URL here after deploy_
+Env vars: `OPENAI_API_KEY`, `OPENAI_VECTOR_STORE_NAME=kb-sync-agent`
 
-## Screenshot
+**Last run artefact (public):** [artifacts/last-run.log](artifacts/last-run.log)
 
-Assistant answering *"How do I add a YouTube video?"* with cited article URL:
+**Dashboard logs (login required):** https://railway.com/project/1135c4b8-3fb0-49d8-ac64-7e46e43c17a1/logs?environmentId=7aad901f-d5ac-4ae8-83c0-9e0506024c6c
+
+Sample successful output:
+
+```
+Scrape done: added=0 updated=0 skipped=30 total=30
+Upload done: added=30 updated=0 skipped=0 embedded_files=60
+Job completed successfully
+```
+
+## Screenshots
+
+**OptiBot** answering *"How do I add a YouTube video?"* with cited article URL:
 
 ![OptiBot test](screenshots/optibot-youtube-test.png)
 
-_Test in [OpenAI Playground](https://platform.openai.com/playground) with assistant **OptiBot**, or run `python main.py --test "..."`. Save screenshot to `screenshots/`._
+**Daily job** log on Railway (`Job completed successfully`):
+
+![Railway job log](screenshots/railway-job-log.png)
 
 ## Project layout
 
 ```
+artifacts/     # last-run log artefact (public)
 docs/          # scraped Markdown articles
 logs/          # job run logs (gitignored)
 scraper.py     # Zendesk API → Markdown
