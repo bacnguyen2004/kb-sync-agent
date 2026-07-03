@@ -34,7 +34,7 @@ MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
 
 def get_client() -> OpenAI:
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("OPENAI_API_KEY") or os.getenv("API_KEY")
     if not api_key:
         raise ValueError("OPENAI_API_KEY is missing. Copy .env.sample to .env and set your key.")
     return OpenAI(api_key=api_key)

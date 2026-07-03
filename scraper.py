@@ -161,18 +161,32 @@ def collect_articles(limit: int = 30) -> list[dict]:
 
 def scrape(limit: int = 30, docs_dir: Path = DOCS_DIR) -> dict:
     articles = collect_articles(limit=limit)
-    saved: list[str] = []
+    docs_dir.mkdir(parents=True, exist_ok=True)
+
+    stats = {"added": 0, "updated": 0, "skipped": 0, "count": 0, "files": []}
 
     for article in articles:
-        path = save_article(article, docs_dir=docs_dir)
-        saved.append(path.name)
+        slug = slug_from_url(article["html_url"])
+        path = docs_dir / f"{slug}.md"
+        markdown = build_markdown(article)
+        new_hash = content_hash(markdown)
 
-    summary = {
-        "count": len(saved),
-        "files": sorted(saved),
-        "article_ids": [a["id"] for a in articles],
-    }
-    return summary
+        if path.exists():
+            old_hash = content_hash(path.read_text(encoding="utf-8"))
+            if old_hash == new_hash:
+                stats["skipped"] += 1
+                continue
+            stats["updated"] += 1
+        else:
+            stats["added"] += 1
+
+        path.write_text(markdown, encoding="utf-8")
+        stats["files"].append(path.name)
+
+    stats["count"] = len(articles)
+    stats["files"] = sorted(stats["files"])
+    stats["article_ids"] = [a["id"] for a in articles]
+    return stats
 
 
 if __name__ == "__main__":
